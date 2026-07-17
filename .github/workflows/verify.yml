@@ -223,8 +223,7 @@ jobs:
           chmod: 0755
 
       - run: |
-          spectral lint 'docs/**/*.yaml' --fail-severity info
-          spectral lint 'docs/**/*.yml' --fail-severity info
+          spectral lint 'docs/**/*.{yaml,yml}' --fail-severity info
 
   shellcheck:
     runs-on: ubuntu-latest
